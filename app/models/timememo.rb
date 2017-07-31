@@ -1,0 +1,2 @@
+class Timememo < ApplicationRecord
+end
