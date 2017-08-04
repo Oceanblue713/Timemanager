@@ -1,0 +1,12 @@
+<h1>Schedules</h1>
+
+
+<ul>
+  
+<% @timememos.each do |timememo| %>
+<li><%= link_to timememo.time, timememo %></li>
+<li><%= timememo.place %></li>
+<li><%= timememo.content %></li>
+<% end %>
+
+</ul>
