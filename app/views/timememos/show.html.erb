@@ -2,3 +2,7 @@
 
 <p><%= @timememo.place %></p>
 <p><%= @timememo.content %></p>
+
+<%= link_to 'Goto Main Page', timememos_path %>
+<%= link_to 'Edit this Schedule', edit_timememo_path(@timememo) %>
+<%= link_to 'Delete this Schedule', @timememo, method: :delete %>

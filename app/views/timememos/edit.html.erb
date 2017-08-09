@@ -1,0 +1,16 @@
+<h1> Edit <%= @timememo.time %> Schedule</h1>
+
+<%= form_for(@timememo) do |f| %>
+  <%= f.label :time, 'Time:' %>
+  <%= f.text_field :time %>
+  
+  <%= f.label :place, 'Place:' %>
+  <%= f.text_field :place %>
+  
+  <%= f.label :content, 'Content:' %>
+  <%= f.text_area :content %>
+  
+  <%= f.submit "Submit" %>
+<% end %>
+
+<%= link_to 'Back to Main Page', timememos_path %>
